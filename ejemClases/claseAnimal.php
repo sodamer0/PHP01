@@ -62,6 +62,7 @@ class Animal{
     }
 }
 
+$animal1 = new Animal("Copito","5");
 
 
 ?>
