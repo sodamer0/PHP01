@@ -1,0 +1,17 @@
+{
+    "name": "tarde/email-test",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "sodamer0",
+            "email": "sapecarr@afd.novadixital.es"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.10"
+    }
+}

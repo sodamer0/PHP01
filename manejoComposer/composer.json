@@ -1,0 +1,17 @@
+{
+    "name": "tarde/manejo-composer",
+    "description": "mi-proyecto",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Santi"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.10"
+    }
+}

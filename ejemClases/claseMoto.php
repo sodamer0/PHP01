@@ -9,9 +9,9 @@ class Moto extends Vehiculo{
     private $precio;
 
 
-    public function __construct(string $modelo,bool $parado,float $velocidad, int $cilindrada, float $precio)
+    public function __construct(string $modelo,float $velocidad, int $cilindrada, float $precio)
     {
-        parent::__construct($modelo,$parado,$velocidad);
+        parent::__construct($modelo,$velocidad);
 
         $this->cilindrada = $cilindrada;
 
@@ -111,12 +111,20 @@ class Moto extends Vehiculo{
     public function obtenerDatos(){
 
 
-    return "\nModelo: ". $miMoto->modelo . "\n¿Está parada?: ".$miMoto->getParado() . "\nTiene una velocidad de: ". $miMoto->velocidad ."Km/h.\n"."Tiene una cilindrada de: ". $miMoto->getCilindrada()."Cc.\n". "Tiene un precio de: ". $miMoto->getPrecio() ."€\n";
+    return "\nModelo: ". $this->modelo . "\n¿Está parada?: ".($this->parado ? 'Sí' : 'No') . "\nTiene una velocidad de: ". $this->velocidad ."Km/h.\n"."Tiene una cilindrada de: ". $this->getCilindrada()."Cc.\n". "Tiene un precio de: ". number_format($this->getPrecio(), 2 ,',','.')."€\n";
     }
 }
 
-$moto1 = new Moto("Vespa",false,20.50,500,3150.65);
+$moto1 = new Moto("Vespa",20.50,500,3150.65);
 
-echo $moto1.obtenerDatos();
+$moto2 = new Moto("Kawasaki",80.0,550,5550);
+
+$moto3 = new Moto("Hamaha",0,700,12345.80);
+
+echo $moto1->obtenerDatos();
+
+echo $moto2->obtenerDatos();
+
+echo $moto3->obtenerDatos();
 
 ?>

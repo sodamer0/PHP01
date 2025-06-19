@@ -13,15 +13,22 @@ abstract class Vehiculo{
     protected $velocidad;
 
 
-    public function __construct(string $modelo, bool $parado, float $velocidad)
+    public function __construct(string $modelo, float $velocidad=0)
     {
         $this->modelo = $modelo;
 
-        $this->parado = true;
-
         $this->velocidad = $velocidad;
+
+        $this->parado = $this->saberSiParado($velocidad);
+
+
     }
 
+
+    private function saberSiParado(float $velocidad): bool
+    {
+        return $velocidad === 0.0;
+    }
 
     abstract public function acelerar();
 
