@@ -1,0 +1,12 @@
+id==== 128559852838-vg7r1b335h1gv9a2tfms0i4jc6c525u7.apps.googleusercontent.com
+
+
+secret==== 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
+
+
+código confirmación==== 4/0AUJR-x4_FR0Ahy-HG80lkTs57gw_N_Rleids8t709uSwGMssAI_EIpQXaI5cnTzPv0wrwQ&
+
+
+✅ Access Token: ya29.a0AW4Xtxiglh9cRWKOV4txg7847a4910cnWsujS6jqjCdQkaIVS7lYA9fvaWgNBbtsD75J6hMOIXmXK3mhgVSOpPH8ugkYvRuqdVbf2byt9AEQO-lmjRn-n9ETA1S09rskv76_CeSjXaPlU-uy56HqJAFj5NEMfAKybxjwXb7xaCgYKAfMSAQ8SFQHGX2MilKBASG0JX9HIyzYCoUWJyw0175
+
+🔄 Refresh Token: 1//03Hf-VEj5jLBcCgYIARAAGAMSNwF-L9Ir82jwUhIo9meUi6o3fWikneMQhkjP1jhLudF_ZxdzcIXhkJ_tE6G45btigboa_u8g7Uo
