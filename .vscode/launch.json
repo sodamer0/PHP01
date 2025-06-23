@@ -6,12 +6,6 @@
     "configurations": [
 
         {
-            "name": "Listen for Xdebug",
-            "type": "php",
-            "request": "launch",
-            "port": 9003
-        },
-        {
             "name": "Launch currently open script",
             "type": "php",
             "request": "launch",
@@ -44,6 +38,20 @@
                 "uriFormat": "http://localhost:%s",
                 "action": "openExternally"
             }
+        },
+            
+        {
+                "name": "PHP: Escuchar para Xdebug",
+                "type": "php",
+                "request": "launch",
+                "port": 9003,
+                "stopOnEntry": true,
+                "pathMappings": {
+                "/var/www/html": "${workspaceFolder}"
+            },
+                "log": true
         }
-    ]
+  ]
+
+    
 }
