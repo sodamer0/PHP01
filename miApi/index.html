@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica: Consumir API de Productos</title>
+    <link rel="stylesheet" href="mystyles.css">
+</head>
+<body>
+    <h2>Crear Producto</h2>
+    <form id="formProducto" onsubmit="crearProducto(event)">
+        <label>Nombre: <input type="text" id="nombre" required></label>
+        <label>Precio: <input type="number" id="precio" required></label>
+        <label>Stock: <input type="number" id="stock" required></label>
+        <button type="submit">Crear</button>
+    </form>
+
+    <h2>Listar Productos</h2>
+    <button onclick="listarProductos()">Actualizar Lista</button>
+    <div id="result" class="result"></div>
+
+    <script src="myscript.js"></script>
+</body>
+</html>
+

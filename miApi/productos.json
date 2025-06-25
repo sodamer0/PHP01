@@ -1,0 +1,21 @@
+Anuncio: "[ { "id": 1, "nombre": "Laptop",…"
+[
+    {
+        "id": 1,
+        "nombre": "Laptop",
+        "precio": 1000,
+        "stock": 10
+    },
+    {
+        "id": 2,
+        "nombre": "Tel\u00e9fono",
+        "precio": 500,
+        "stock": 20
+    },
+    {
+        "id": 3,
+        "nombre": "coche",
+        "precio": 2200,
+        "stock": 2
+    }
+]
