@@ -1,0 +1,17 @@
+{
+    "name": "tarde/mi-api03",
+    "autoload": {
+        "psr-4": {
+            "Tarde\\MiApi03\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "sodamer0",
+            "email": "sapecarr@afd.novadixital.es"
+        }
+    ],
+    "require": {
+        "mikecao/flight": "^3.15"
+    }
+}

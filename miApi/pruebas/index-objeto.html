@@ -1,0 +1,9 @@
+<script>
+fetch('./api-objeto.php')
+    .then(response => response.json())
+    .then(json => {
+        const productos = json.data; // Accede al array dentro de la clave "data"
+        const tercerProducto = json.data[2]; // Accede al tercer elemento (índice 2)
+        console.log(tercerProducto); // {id: 3, nombre: "coche", precio: 2200, stock: 2}
+    });
+</script>

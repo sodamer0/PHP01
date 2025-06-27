@@ -1,0 +1,10 @@
+<script>
+fetch('./api-array.php')
+    .then(response => response.json())  // Convierte la cadena JSON en una estructura de datos nativa 
+										// (un array en este caso, ya que el JSON comienza con []).
+	.then(data => {
+			// La respuesta es directamente un array
+			const tercerProducto = data[2]; // Accede al tercer elemento (índice 2)
+			console.log(tercerProducto); // {id: 3, nombre: "coche", precio: 2200, stock: 2}
+		})
+</script>

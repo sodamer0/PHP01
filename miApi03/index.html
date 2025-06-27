@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Práctica: Consumir API de Productos</title>
+    <title>Práctica: Consumir API de Productos con Flight</title>
     <link rel="stylesheet" href="mystyles.css">
 </head>
 <body>
@@ -13,17 +13,16 @@
         <button type="submit">Crear</button>
     </form>
 
-    <h2>Buscar Producto por ID</h2>
-    <form id="formBuscarProducto">
-        <label>ID: <input type="number" id="buscarId" required></label>
-        <button type="submit" onclick="buscarProducto()">Buscar</button>
-    </form>
-  
     <h2>Listar Productos</h2>
     <button onclick="listarProductos()">Actualizar Lista</button>
     <div id="result" class="result"></div>
 
+    <h2>Buscar Producto por ID</h2>
+    <form id="formBuscarProducto">
+        <label>ID: <input type="number" id="buscarId" required></label>
+        <button type="button" onclick="buscarProducto()">Buscar</button>
+    </form>
+
     <script src="myscript.js"></script>
 </body>
 </html>
-
