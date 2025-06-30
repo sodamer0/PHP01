@@ -18,10 +18,14 @@
     <div id="result" class="result"></div>
 
     <h2>Buscar Producto por ID</h2>
-    <form id="formBuscarProducto">
-        <label>ID: <input type="number" id="buscarId" required></label>
-        <button type="button" onclick="buscarProducto()">Buscar</button>
+    <form id="formBuscarProducto" onsubmit="buscarProductoPorId(event)">
+        <label>ID del Producto:
+            <input type="number" id="idProducto" min="1" required>
+        </label>
+        <button type="submit">Buscar</button>
     </form>
+    
+    <div id="resultadoBusqueda"></div>
 
     <script src="myscript.js"></script>
 </body>

@@ -28,5 +28,11 @@
         "nombre": "dsfas",
         "precio": 3423,
         "stock": 2
+    },
+    {
+        "id": 6,
+        "nombre": "rat\u00f3n inal\u00e1mbrico",
+        "precio": 11,
+        "stock": 15
     }
 ]

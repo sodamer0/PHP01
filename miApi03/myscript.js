@@ -43,5 +43,38 @@ async function crearProducto(event) {
     }
 }
 
+async function buscarProductoPorId(event) {
+    event.preventDefault();
+    const id = document.getElementById('idProducto').value;
+    const resultadoDiv = document.getElementById('resultadoBusqueda');
+
+    try {
+        const response = await fetch(`./productos/${id}`);
+        if (!response.ok) {
+            const error = await response.json();
+            throw new Error(error.error || 'Producto no encontrado');
+        }
+
+        const producto = await response.json();
+
+        // Mostrar el producto como tabla
+        let html = '<table><tr><th>ID</th><th>Nombre</th><th>Precio</th><th>Stock</th></tr>';
+        html += `<tr>
+                    <td>${producto.id}</td>
+                    <td>${producto.nombre}</td>
+                    <td>${producto.precio}</td>
+                    <td>${producto.stock}</td>
+                 </tr>`;
+        html += '</table>';
+
+        resultadoDiv.innerHTML = html;
+        resultadoDiv.className = 'result success';
+
+    } catch (error) {
+        resultadoDiv.innerHTML = `<p class="error">${error.message}</p>`;
+        resultadoDiv.className = 'result error';
+    }
+}
+
 // Cargar productos al cargar la página
 listarProductos();
